@@ -2,7 +2,7 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
 
-const moduleName = 'ymlConfig'
+const moduleName = 'ymlconfigr'
 const ABS_PATH = path.join(path.resolve(''));
 const MODULE_PATH = path.join(ABS_PATH,`/node_modules/${moduleName}`);
 
