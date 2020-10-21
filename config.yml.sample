@@ -1,0 +1,23 @@
+
+defaults: &DEFAULT
+  module_one_config: &module_one_config
+    API_KEY: ''
+    BASE_URL: ''
+  module_two_config: &module_two_config
+    API_KEY: ''
+    BASE_URL: ''
+  secret: ''
+
+staging: &STAGING
+  <<: *DEFAULT
+  module_one_config: &staging_module_one_config
+    <<: *module_one_config
+  module_two_config: &staging_module_two_config
+    <<: *module_two_config
+
+production: &PRODUCTION
+  <<: *STAGING
+  module_one_config:
+    <<: *staging_module_one_config
+  module_two_config:
+    <<: *staging_module_two_config
