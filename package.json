@@ -1,6 +1,6 @@
 {
   "name": "ymlconfigr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package that utilizes config.yml file for environment config that you can use (e.g. keeping keys and other environment variables)",
   "main": "config.js",
   "scripts": {
