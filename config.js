@@ -4,13 +4,7 @@ const path = require('path');
 
 const moduleName = 'ymlconfigr'
 const ABS_PATH = path.join(path.resolve(''));
-const MODULE_PATH = path.join(ABS_PATH,`/node_modules/${moduleName}`);
-
-console.log('path resolve modulename: ', path.resolve(''));
-console.log('path dirname: ', __dirname);
-console.log('path filename ', __filename);
-console.log('ABS PATH: ', ABS_PATH);
-
+const MODULE_PATH = path.join(ABS_PATH, `/node_modules/${moduleName}`);
 const config = {};
 
 config.getFiles = (fileExtension = 'yml', configFilename = 'config') => {
