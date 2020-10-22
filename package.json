@@ -1,16 +1,23 @@
 {
   "name": "ymlconfigr",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A package that utilizes config.yml file for environment config that you can use (e.g. keeping keys and other environment variables)",
-  "main": "config.js",
+  "main": "lib/config.js",
+  "types": "lib",
   "scripts": {
-    "test": "node config.test.js",
-    "start": "node config.js",
-    "prepublish": "npm test"
+    "test": "node lib/index.test.js",
+    "start": "node lib/index.js",
+    "prepublish": "tsc -p .; npm test",
+    "build": "tsc -p ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/js-yaml": "^3.12.5",
+    "@types/node": "^14.14.2",
     "js-yaml": "^3.14.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
   }
 }
