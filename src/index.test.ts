@@ -4,21 +4,21 @@ import fs from 'fs';
 
 console.log('YMLCONFIGR - tests starting...');
 
-const config = new Config();
+// const config = new Config();
 
-console.log({ config });
+// console.log({ config });
 
-if (!config.getFiles) {
-    throw new Error("getFiles function must be implemented");
-}
+// if (!config.getFiles) {
+//     throw new Error("getFiles function must be implemented");
+// }
 
-if (!config.getConfig) {
-    throw new Error("getConfig function must be implemented");
-}
+// if (!config.getConfig) {
+//     throw new Error("getConfig function must be implemented");
+// }
 
-if (!config.getCurrentEnv) {
-    throw new Error("getCurrentEnv function must be implemented");
-}
+// if (!config.getCurrentEnv) {
+//     throw new Error("getCurrentEnv function must be implemented");
+// }
 
 const fileName = 'config.yml.sample';
 const ABS_PATH = path.resolve('');
