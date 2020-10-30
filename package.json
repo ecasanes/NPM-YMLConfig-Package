@@ -19,5 +19,12 @@
   },
   "devDependencies": {
     "typescript": "^4.0.3"
+  },
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecasanes/NPM-YMLConfig-Package.git"
   }
 }
