@@ -1,6 +1,6 @@
 {
   "name": "ymlconfigr",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A package that utilizes config.yml file for environment config that you can use (e.g. keeping keys and other environment variables)",
   "main": "lib/index.js",
   "types": "lib",
@@ -19,9 +19,6 @@
   },
   "devDependencies": {
     "typescript": "^4.0.3"
-  },
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/" 
   },
   "repository": {
     "type": "git",
